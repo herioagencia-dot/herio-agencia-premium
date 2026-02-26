@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HERIO - Captación de Clientes para Empresas de Servicios</title>
+
+<!-- SEO básico -->
+<meta name="description" content="Ayudamos a empresas de servicios a captar clientes de forma constante mediante estrategias digitales efectivas.">
+<meta name="keywords" content="marketing digital, captación clientes, empresas de servicios, abogados, inmobiliarias, consultores">
+<meta name="author" content="HERIO Marketing Digital">
+<meta property="og:title" content="HERIO Marketing Digital">
+<meta property="og:description" content="Generamos clientes cualificados para empresas de servicios mediante marketing digital profesional.">
+<meta property="og:type" content="website">
+
+<!-- Preload Google Fonts -->
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+body{background:#0b0b0b;color:#fff;overflow-x:hidden;opacity:0;transition:opacity 0.5s ease;}
+nav{width:100%;padding:15px 5%;background:#111;display:flex;justify-content:space-between;align-items:center;position:fixed;top:0;z-index:1000;}
+nav h2{font-weight:700;background: linear-gradient(90deg,#d4af37,#f1c40f);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+nav .menu{display:flex;gap:20px;font-size:0.9rem;}
+nav a{color:#fff;font-weight:500;text-decoration:none;position:relative;overflow:hidden;}
+nav a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background:#d4af37;transform:scaleX(0);transition:transform 0.3s ease;transform-origin:right;}
+nav a:hover::after{transform:scaleX(1);transform-origin:left;}
+.hamburger{display:none;flex-direction:column;cursor:pointer;gap:4px;}
+.hamburger div{width:22px;height:3px;background:#fff;border-radius:2px;}
+section{padding:60px 5%;opacity:0;transform:translateY(30px);transition:all 0.8s ease;}
+section.show{opacity:1;transform:translateY(0);}
+.service-grid, .plan-grid, .testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;}
+.card, .plan-card, .testimonials-grid div{background:#1a1a1a;padding:20px;border-radius:10px;box-shadow:0 5px 15px rgba(212,175,55,0.2);transition:all 0.4s ease;}
+.card:hover, .plan-card:hover, .testimonials-grid div:hover{transform:translateY(-5px) scale(1.03);box-shadow:0 10px 25px rgba(212,175,55,0.4);}
+.card img, .plan-card img{width:60px;margin-bottom:15px;}
+.plan-card.popular{background:linear-gradient(135deg,#d4af37,#f1c40f);color:#000;transform:scale(1.03);}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:space-between;padding:120px 5% 60px 5%;gap:40px;flex-wrap:wrap;}
+.hero-text{flex:1;min-width:260px;}
+.hero-text h1{font-size:2.5rem;line-height:1.2;margin-bottom:15px;display:flex;flex-wrap:wrap;}
+.hero-text h1 span{background: linear-gradient(90deg,#d4af37,#f1c40f);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+.hero-text p{color:#ccc;font-size:1rem;margin-bottom:8px;}
+.btn{display:inline-block;padding:12px 28px;font-weight:700;border-radius:8px;text-decoration:none;background:linear-gradient(90deg,#d4af37,#f1c40f);color:#000;transition:all 0.3s ease;font-size:0.9rem;}
+.btn:hover{box-shadow:0 0 15px #f1c40f;transform:scale(1.05);}
+.hero-image{flex:1;min-width:260px;}
+.hero-image img{width:100%;border-radius:12px;box-shadow:0 10px 30px rgba(212,175,55,0.5);transition:transform 0.4s ease;}
+.hero-image img:hover{transform:scale(1.05);}
+footer{padding:30px 5%;text-align:center;background:#0b0b0b;color:#777;font-size:0.85rem;}
+.whatsapp-btn{position:fixed;bottom:15px;right:15px;background:#25D366;color:#fff;width:50px;height:50px;border-radius:50%;display:flex;justify-content:center;align-items:center;font-size:24px;box-shadow:0 5px 15px rgba(0,0,0,0.3);text-decoration:none;transition:0.3s;}
+@media(max-width:768px){.hero{flex-direction:column;text-align:center;}.hamburger{display:flex;}.menu{display:none;flex-direction:column;position:absolute;top:55px;right:5%;background:#111;padding:15px;border-radius:8px;gap:10px;}}
+html{scroll-behavior:smooth;}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h2>HERIO</h2>
+  <div class="menu">
+    <a href="#inicio">Inicio</a>
+    <a href="#resultados">Resultados</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#planes">Planes</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+  <div class="hamburger"><div></div><div></div><div></div></div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-text">
+    <h1>
+      <span>Generamos clientes cualificados</span> para empresas de servicios
+    </h1>
+    <p>
+      Ayudamos a abogados, inmobiliarias y consultores a posicionarse como líderes y captar clientes de forma constante.
+    </p>
+    <a href="https://wa.me/34641905184" class="btn">
+      Solicitar Auditoría Estratégica
+    </a>
+  </div>
+  <div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=600&q=60" alt="Marketing Digital para Servicios" loading="lazy">
+  </div>
+</section>
+
+<!-- RESULTADOS -->
+<section id="resultados">
+  <h2>Resultados Reales</h2>
+  <div class="service-grid">
+    <div class="card">
+      <h3>+45 Leads / mes</h3>
+      <p>Para inmobiliaria en 90 días</p>
+    </div>
+    <div class="card">
+      <h3>+60%</h3>
+      <p>Aumento de consultas para despacho jurídico</p>
+    </div>
+    <div class="card">
+      <h3>+50 Empresas</h3>
+      <p>Confían en HERIO</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section class="services" id="servicios">
+  <h2>Nuestros Servicios</h2>
+  <div class="service-grid">
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2721/2721297.png" alt="Diseño Web" loading="lazy">
+      <h3>Diseño Web Estratégico</h3>
+      <p>Webs que convierten visitantes en clientes de forma profesional.</p>
+    </div>
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2920/2920349.png" alt="SEO" loading="lazy">
+      <h3>SEO Avanzado</h3>
+      <p>Posicionamos tu empresa como referente en Google y directorios profesionales.</p>
+    </div>
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/747/747310.png" alt="Publicidad Online" loading="lazy">
+      <h3>Publicidad Online</h3>
+      <p>Campañas en Google Ads y redes sociales para generar clientes reales.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section id="proceso">
+  <h2>Nuestro Proceso</h2>
+  <div class="service-grid">
+    <div class="card">
+      <h3>1. Auditoría</h3>
+      <p>Analizamos tu negocio y detectamos oportunidades reales de captación.</p>
+    </div>
+    <div class="card">
+      <h3>2. Estrategia</h3>
+      <p>Diseñamos un plan digital adaptado a tus objetivos.</p>
+    </div>
+    <div class="card">
+      <h3>3. Escalado</h3>
+      <p>Optimizamos campañas para maximizar clientes y ROI.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PLAN PREMIUM -->
+<section id="planes">
+  <h2>Programa Premium de Captación</h2>
+  <div class="plan-grid">
+    <div class="plan-card popular">
+      <h3>Plan Estratégico</h3>
+      <p style="font-size:1.8rem;">Plan Personalizado</p>
+      <p>✔ Diseño Web Profesional</p>
+      <p>✔ SEO Avanzado</p>
+      <p>✔ Publicidad Online</p>
+      <p>✔ Estrategia Personalizada</p>
+      <p>✔ Soporte Prioritario</p>
+      <a href="https://wa.me/34641905184" class="btn">
+        Solicitar Auditoría
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="testimonials">
+  <h2>Lo que dicen nuestros clientes</h2>
+  <div class="testimonials-grid">
+    <div>
+      <p>"En 90 días pasamos de 15 a 60 leads mensuales gracias a HERIO."</p>
+      <strong>- Carlos M., Consultor Financiero</strong>
+    </div>
+    <div>
+      <p>"Profesionalidad y resultados medibles que realmente funcionan."</p>
+      <strong>- Ana L., Abogada</strong>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section id="contacto">
+  <h2>Convierte tu web en tu mejor comercial</h2>
+  <p style="text-align:center; color:#ccc;">
+    Agenda una auditoría gratuita y descubre cómo podemos ayudarte a captar clientes de forma constante.
+  </p>
+  <div style="text-align:center; margin-top:20px;">
+    <a href="https://wa.me/34641905184" class="btn">
+      Quiero más clientes cualificados
+    </a>
+  </div>
+</section>
+
+<footer>
+© 2026 HERIO - Todos los derechos reservados | 
+<a href="#">Aviso Legal</a> | 
+<a href="#">Política de Privacidad</a> | 
+<a href="#">Política de Cookies</a>
+</footer>
+
+<a href="https://wa.me/34641905184" class="whatsapp-btn">💬</a>
+
+<script>
+window.addEventListener("load",()=>{
+  document.body.style.opacity="1";
+  const observer=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add('show');
+      }
+    });
+  },{threshold:0.2});
+  document.querySelectorAll('section,.card,.plan-card,.testimonials-grid div').forEach(el=>observer.observe(el));
+});
+
+const hamburger=document.querySelector('.hamburger');
+const menu=document.querySelector('nav .menu');
+hamburger.addEventListener('click',()=>{menu.style.display=menu.style.display==='flex'?'none':'flex';});
+</script>
+
+</body>
+</html>
